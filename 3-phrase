@@ -1,4 +1,5 @@
 #!/bin/bash
+# counting words and spaces in a phrase
 read -p "Write any phrase you want !" phrase
 word=$(echo -n "$phrase" | wc -w)
 space=$(expr length "$phrase" - length `echo "$phrase" | sed "s/ //g"`)
