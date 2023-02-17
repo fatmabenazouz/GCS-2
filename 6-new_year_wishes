@@ -1,0 +1,5 @@
+while read -r line
+do
+echo "Happy New Year $line !
+May the coming year be full of grand adventures and opportunities." >> $line.txt
+done < members_names.txt
